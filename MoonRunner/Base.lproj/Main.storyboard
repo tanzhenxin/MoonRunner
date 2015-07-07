@@ -289,6 +289,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="4pC-Sb-cHb" id="DGX-SC-1a0"/>
+                        <outlet property="distanceLabel" destination="HKL-lp-gqY" id="EKo-wc-8BL"/>
+                        <outlet property="mapView" destination="ALm-UB-R9s" id="k41-FN-z8N"/>
+                        <outlet property="paceLabel" destination="o4T-rr-ySo" id="hDp-j7-8PO"/>
+                        <outlet property="timeLabel" destination="Rdz-5d-HGd" id="4LY-Uo-0uI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBX-Vh-YSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

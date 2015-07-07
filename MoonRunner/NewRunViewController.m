@@ -57,6 +57,10 @@ static NSString * const detailSegueName = @"RunDetails";
     [self presentViewController:alert animated:TRUE completion:nil];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [[segue destinationViewController] setRun:self.run];
+}
+
 - (void)viewWillAppear:(BOOL)animated {
     
     self.startButton.hidden = NO;

@@ -7,16 +7,36 @@
 //
 
 #import "DetailViewController.h"
+#import <MapKit/MapKit.h>
 
 @interface DetailViewController ()
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *paceLabel;
 
 @end
 
 @implementation DetailViewController
 
+#pragma mark - Managing the detail item
+
+- (void)setRun:(Run *)run {
+    if (_run != run) {
+        _run = run;
+        [self configureView];
+    }
+}
+
+- (void)configureView {
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self configureView];
 }
 
 - (void)didReceiveMemoryWarning {

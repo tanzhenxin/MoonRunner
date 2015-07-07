@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class Run;
+
 @interface DetailViewController : UIViewController
+
+@property (strong,nonatomic) Run *run;
 
 @end
