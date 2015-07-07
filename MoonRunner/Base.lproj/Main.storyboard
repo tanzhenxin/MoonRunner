@@ -104,7 +104,7 @@
         <!--New Run-->
         <scene sceneID="y9w-uD-6Z7">
             <objects>
-                <viewController id="ARR-vd-n5T" userLabel="New Run" sceneMemberID="viewController">
+                <viewController id="ARR-vd-n5T" userLabel="New Run" customClass="NewRunViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F1E-Zl-pV7"/>
                         <viewControllerLayoutGuide type="bottom" id="w9G-3x-K8t"/>
@@ -128,7 +128,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="185" width="368" height="21"/>
+                                    <rect key="frame" x="16" y="190" width="368" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pace:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnx-II-0Jy">
@@ -138,15 +138,6 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="16" y="246" width="368" height="21"/>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready to lanch?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfd-Dj-sUa">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="123" y="160" width="154" height="82"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F73-qk-Ch6">
@@ -159,6 +150,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="65" y="414" width="253" height="70"/>
                                 </variation>
+                                <connections>
+                                    <action selector="startPressed:" destination="ARR-vd-n5T" eventType="touchUpInside" id="wVG-pR-FsV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5F-z4-ReV">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -170,7 +164,19 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="65" y="510" width="253" height="70"/>
                                 </variation>
+                                <connections>
+                                    <action selector="stopPressed:" destination="ARR-vd-n5T" eventType="touchUpInside" id="3OH-kp-Tme"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready to lanch?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfd-Dj-sUa">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="114" y="160" width="154" height="82"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -178,9 +184,9 @@
                                 <exclude reference="aLr-aO-drt"/>
                                 <exclude reference="hWZ-WU-ax1"/>
                                 <exclude reference="Fnx-II-0Jy"/>
-                                <exclude reference="nfd-Dj-sUa"/>
                                 <exclude reference="F73-qk-Ch6"/>
                                 <exclude reference="W5F-z4-ReV"/>
+                                <exclude reference="nfd-Dj-sUa"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -188,13 +194,19 @@
                                 <include reference="aLr-aO-drt"/>
                                 <include reference="hWZ-WU-ax1"/>
                                 <include reference="Fnx-II-0Jy"/>
-                                <include reference="nfd-Dj-sUa"/>
                                 <include reference="F73-qk-Ch6"/>
                                 <include reference="W5F-z4-ReV"/>
+                                <include reference="nfd-Dj-sUa"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="distanceLabel" destination="aLr-aO-drt" id="JEQ-2P-Nca"/>
+                        <outlet property="paceLabel" destination="Fnx-II-0Jy" id="OLb-uB-Ynm"/>
+                        <outlet property="promptLabel" destination="nfd-Dj-sUa" id="crO-NX-cI1"/>
+                        <outlet property="startButton" destination="F73-qk-Ch6" id="hlL-0H-GxJ"/>
+                        <outlet property="stopButton" destination="W5F-z4-ReV" id="D1V-Vb-g0A"/>
+                        <outlet property="timeLabel" destination="hWZ-WU-ax1" id="8cW-Mm-mnR"/>
                         <segue destination="j3y-i5-lXc" kind="showDetail" identifier="RunDetails" id="9Xu-md-ATC"/>
                     </connections>
                 </viewController>
@@ -205,7 +217,7 @@
         <!--Detail-->
         <scene sceneID="pZQ-RO-ggF">
             <objects>
-                <viewController id="j3y-i5-lXc" userLabel="Detail" sceneMemberID="viewController">
+                <viewController id="j3y-i5-lXc" userLabel="Detail" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rtA-Xk-mb2"/>
                         <viewControllerLayoutGuide type="bottom" id="iss-hf-sfR"/>

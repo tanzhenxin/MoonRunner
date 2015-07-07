@@ -18,6 +18,8 @@
 		FC88D7FE1B4B757900AEF4CF /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D7FD1B4B757900AEF4CF /* Location.m */; };
 		FC88D8001B4B75D300AEF4CF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC88D7FF1B4B75D300AEF4CF /* MapKit.framework */; };
 		FC88D8051B4B7F7800AEF4CF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D8041B4B7F7800AEF4CF /* HomeViewController.m */; };
+		FC88D8081B4B893100AEF4CF /* NewRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D8071B4B893100AEF4CF /* NewRunViewController.m */; };
+		FC88D80B1B4B895800AEF4CF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D80A1B4B895800AEF4CF /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		FC88D7FF1B4B75D300AEF4CF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FC88D8031B4B7F7800AEF4CF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FC88D8041B4B7F7800AEF4CF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FC88D8061B4B893100AEF4CF /* NewRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRunViewController.h; sourceTree = "<group>"; };
+		FC88D8071B4B893100AEF4CF /* NewRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRunViewController.m; sourceTree = "<group>"; };
+		FC88D8091B4B895800AEF4CF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FC88D80A1B4B895800AEF4CF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +108,11 @@
 				FC88D7F41B4B752F00AEF4CF /* MoonRunner */,
 				FC88D7CC1B4B739F00AEF4CF /* AppDelegate.h */,
 				FC88D7CD1B4B739F00AEF4CF /* AppDelegate.m */,
+				FC88D8061B4B893100AEF4CF /* NewRunViewController.h */,
+				FC88D8071B4B893100AEF4CF /* NewRunViewController.m */,
 				FC88D7D81B4B739F00AEF4CF /* Main.storyboard */,
+				FC88D8091B4B895800AEF4CF /* DetailViewController.h */,
+				FC88D80A1B4B895800AEF4CF /* DetailViewController.m */,
 				FC88D7DB1B4B739F00AEF4CF /* Images.xcassets */,
 				FC88D7DD1B4B739F00AEF4CF /* LaunchScreen.xib */,
 				FC88D7C81B4B739F00AEF4CF /* Supporting Files */,
@@ -241,6 +251,8 @@
 				FC88D7FE1B4B757900AEF4CF /* Location.m in Sources */,
 				FC88D7F81B4B753A00AEF4CF /* MoonRunner.xcdatamodeld in Sources */,
 				FC88D7FB1B4B757900AEF4CF /* Run.m in Sources */,
+				FC88D80B1B4B895800AEF4CF /* DetailViewController.m in Sources */,
+				FC88D8081B4B893100AEF4CF /* NewRunViewController.m in Sources */,
 				FC88D7CE1B4B739F00AEF4CF /* AppDelegate.m in Sources */,
 				FC88D7CB1B4B739F00AEF4CF /* main.m in Sources */,
 				FC88D8051B4B7F7800AEF4CF /* HomeViewController.m in Sources */,
