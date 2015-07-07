@@ -20,6 +20,7 @@
 		FC88D8051B4B7F7800AEF4CF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D8041B4B7F7800AEF4CF /* HomeViewController.m */; };
 		FC88D8081B4B893100AEF4CF /* NewRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D8071B4B893100AEF4CF /* NewRunViewController.m */; };
 		FC88D80B1B4B895800AEF4CF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D80A1B4B895800AEF4CF /* DetailViewController.m */; };
+		FC88D80E1B4BC65F00AEF4CF /* MathController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D80D1B4BC65F00AEF4CF /* MathController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		FC88D8071B4B893100AEF4CF /* NewRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRunViewController.m; sourceTree = "<group>"; };
 		FC88D8091B4B895800AEF4CF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		FC88D80A1B4B895800AEF4CF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FC88D80C1B4BC65F00AEF4CF /* MathController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathController.h; sourceTree = "<group>"; };
+		FC88D80D1B4BC65F00AEF4CF /* MathController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				FC88D7CD1B4B739F00AEF4CF /* AppDelegate.m */,
 				FC88D8061B4B893100AEF4CF /* NewRunViewController.h */,
 				FC88D8071B4B893100AEF4CF /* NewRunViewController.m */,
+				FC88D80C1B4BC65F00AEF4CF /* MathController.h */,
+				FC88D80D1B4BC65F00AEF4CF /* MathController.m */,
 				FC88D7D81B4B739F00AEF4CF /* Main.storyboard */,
 				FC88D8091B4B895800AEF4CF /* DetailViewController.h */,
 				FC88D80A1B4B895800AEF4CF /* DetailViewController.m */,
@@ -197,6 +202,11 @@
 				TargetAttributes = {
 					FC88D7C41B4B739F00AEF4CF = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					FC88D7E31B4B739F00AEF4CF = {
 						CreatedOnToolsVersion = 6.4;
@@ -250,6 +260,7 @@
 			files = (
 				FC88D7FE1B4B757900AEF4CF /* Location.m in Sources */,
 				FC88D7F81B4B753A00AEF4CF /* MoonRunner.xcdatamodeld in Sources */,
+				FC88D80E1B4BC65F00AEF4CF /* MathController.m in Sources */,
 				FC88D7FB1B4B757900AEF4CF /* Run.m in Sources */,
 				FC88D80B1B4B895800AEF4CF /* DetailViewController.m in Sources */,
 				FC88D8081B4B893100AEF4CF /* NewRunViewController.m in Sources */,

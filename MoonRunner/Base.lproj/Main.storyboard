@@ -51,7 +51,7 @@
                                     <rect key="frame" x="75" y="241" width="250" height="62"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="ARR-vd-n5T" kind="showDetail" id="Aos-ys-agQ"/>
+                                    <segue destination="ARR-vd-n5T" kind="show" id="Aos-ys-agQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cD-yF-EaP">
