@@ -15,6 +15,10 @@
 		FC88D7DC1B4B739F00AEF4CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC88D7DB1B4B739F00AEF4CF /* Images.xcassets */; };
 		FC88D7DF1B4B739F00AEF4CF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC88D7DD1B4B739F00AEF4CF /* LaunchScreen.xib */; };
 		FC88D7EB1B4B739F00AEF4CF /* MoonRunnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D7EA1B4B739F00AEF4CF /* MoonRunnerTests.m */; };
+		FC88D7F81B4B753A00AEF4CF /* MoonRunner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC88D7F61B4B753A00AEF4CF /* MoonRunner.xcdatamodeld */; };
+		FC88D7FB1B4B757900AEF4CF /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D7FA1B4B757900AEF4CF /* Run.m */; };
+		FC88D7FE1B4B757900AEF4CF /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D7FD1B4B757900AEF4CF /* Location.m */; };
+		FC88D8001B4B75D300AEF4CF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC88D7FF1B4B75D300AEF4CF /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,13 @@
 		FC88D7E41B4B739F00AEF4CF /* MoonRunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonRunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC88D7E91B4B739F00AEF4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC88D7EA1B4B739F00AEF4CF /* MoonRunnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoonRunnerTests.m; sourceTree = "<group>"; };
+		FC88D7F41B4B752F00AEF4CF /* MoonRunner */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MoonRunner; sourceTree = SOURCE_ROOT; };
+		FC88D7F71B4B753A00AEF4CF /* MoonRunner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoonRunner.xcdatamodel; sourceTree = "<group>"; };
+		FC88D7F91B4B757900AEF4CF /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
+		FC88D7FA1B4B757900AEF4CF /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
+		FC88D7FC1B4B757900AEF4CF /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		FC88D7FD1B4B757900AEF4CF /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		FC88D7FF1B4B75D300AEF4CF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC88D8001B4B75D300AEF4CF /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +78,7 @@
 		FC88D7BC1B4B739F00AEF4CF = {
 			isa = PBXGroup;
 			children = (
+				FC88D7FF1B4B75D300AEF4CF /* MapKit.framework */,
 				FC88D7C71B4B739F00AEF4CF /* MoonRunner */,
 				FC88D7E71B4B739F00AEF4CF /* MoonRunnerTests */,
 				FC88D7C61B4B739F00AEF4CF /* Products */,
@@ -84,6 +97,12 @@
 		FC88D7C71B4B739F00AEF4CF /* MoonRunner */ = {
 			isa = PBXGroup;
 			children = (
+				FC88D7F61B4B753A00AEF4CF /* MoonRunner.xcdatamodeld */,
+				FC88D7FC1B4B757900AEF4CF /* Location.h */,
+				FC88D7FD1B4B757900AEF4CF /* Location.m */,
+				FC88D7F91B4B757900AEF4CF /* Run.h */,
+				FC88D7FA1B4B757900AEF4CF /* Run.m */,
+				FC88D7F41B4B752F00AEF4CF /* MoonRunner */,
 				FC88D7CC1B4B739F00AEF4CF /* AppDelegate.h */,
 				FC88D7CD1B4B739F00AEF4CF /* AppDelegate.m */,
 				FC88D7D21B4B739F00AEF4CF /* MasterViewController.h */,
@@ -225,7 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC88D7D71B4B739F00AEF4CF /* DetailViewController.m in Sources */,
+				FC88D7FE1B4B757900AEF4CF /* Location.m in Sources */,
 				FC88D7D41B4B739F00AEF4CF /* MasterViewController.m in Sources */,
+				FC88D7F81B4B753A00AEF4CF /* MoonRunner.xcdatamodeld in Sources */,
+				FC88D7FB1B4B757900AEF4CF /* Run.m in Sources */,
 				FC88D7CE1B4B739F00AEF4CF /* AppDelegate.m in Sources */,
 				FC88D7CB1B4B739F00AEF4CF /* main.m in Sources */,
 			);
@@ -422,6 +444,7 @@
 				FC88D7F01B4B739F00AEF4CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC88D7F11B4B739F00AEF4CF /* Build configuration list for PBXNativeTarget "MoonRunnerTests" */ = {
 			isa = XCConfigurationList;
@@ -430,8 +453,22 @@
 				FC88D7F31B4B739F00AEF4CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC88D7F61B4B753A00AEF4CF /* MoonRunner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC88D7F71B4B753A00AEF4CF /* MoonRunner.xcdatamodel */,
+			);
+			currentVersion = FC88D7F71B4B753A00AEF4CF /* MoonRunner.xcdatamodel */;
+			path = MoonRunner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FC88D7BD1B4B739F00AEF4CF /* Project object */;
 }
