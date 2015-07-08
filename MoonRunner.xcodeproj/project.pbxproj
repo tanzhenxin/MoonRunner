@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC4AEF501B4CB5AD00319B7A /* MultiColorPolylineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4AEF4F1B4CB5AD00319B7A /* MultiColorPolylineSegment.m */; };
 		FC88D7CB1B4B739F00AEF4CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D7CA1B4B739F00AEF4CF /* main.m */; };
 		FC88D7CE1B4B739F00AEF4CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D7CD1B4B739F00AEF4CF /* AppDelegate.m */; };
 		FC88D7DA1B4B739F00AEF4CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC88D7D81B4B739F00AEF4CF /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FC4AEF4E1B4CB5AD00319B7A /* MultiColorPolylineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiColorPolylineSegment.h; sourceTree = "<group>"; };
+		FC4AEF4F1B4CB5AD00319B7A /* MultiColorPolylineSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiColorPolylineSegment.m; sourceTree = "<group>"; };
 		FC88D7C51B4B739F00AEF4CF /* MoonRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC88D7C91B4B739F00AEF4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC88D7CA1B4B739F00AEF4CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				FC88D7D81B4B739F00AEF4CF /* Main.storyboard */,
 				FC88D8091B4B895800AEF4CF /* DetailViewController.h */,
 				FC88D80A1B4B895800AEF4CF /* DetailViewController.m */,
+				FC4AEF4E1B4CB5AD00319B7A /* MultiColorPolylineSegment.h */,
+				FC4AEF4F1B4CB5AD00319B7A /* MultiColorPolylineSegment.m */,
 				FC88D7DB1B4B739F00AEF4CF /* Images.xcassets */,
 				FC88D7DD1B4B739F00AEF4CF /* LaunchScreen.xib */,
 				FC88D7C81B4B739F00AEF4CF /* Supporting Files */,
@@ -263,6 +268,7 @@
 				FC88D80E1B4BC65F00AEF4CF /* MathController.m in Sources */,
 				FC88D7FB1B4B757900AEF4CF /* Run.m in Sources */,
 				FC88D80B1B4B895800AEF4CF /* DetailViewController.m in Sources */,
+				FC4AEF501B4CB5AD00319B7A /* MultiColorPolylineSegment.m in Sources */,
 				FC88D8081B4B893100AEF4CF /* NewRunViewController.m in Sources */,
 				FC88D7CE1B4B739F00AEF4CF /* AppDelegate.m in Sources */,
 				FC88D7CB1B4B739F00AEF4CF /* main.m in Sources */,

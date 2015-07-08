@@ -14,4 +14,6 @@
 + (NSString *)stringifySecondCount:(int)seconds usingLongFormat:(BOOL)longFormat;
 + (NSString *)stringifyAvgPaceFromDict:(float)meters overTime:(int)seconds;
 
++ (NSArray *)colorSegmentForLocations:(NSArray *)locations;
+
 @end

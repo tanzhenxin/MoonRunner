@@ -11,6 +11,7 @@
 #import "MathController.h"
 #import "Run.h"
 #import "Location.h"
+#import "MultiColorPolylineSegment.h"
 
 @interface DetailViewController () <MKMapViewDelegate>
 
@@ -81,7 +82,6 @@
 }
 
 - (MKPolyline *)polyLine {
-    
     CLLocationCoordinate2D coords[self.run.locations.count];
     
     for (int i = 0; i < self.run.locations.count; i++) {
@@ -103,7 +103,8 @@
         [self.mapView setRegion:[self mapRegion]];
         
         // make the line(s!) on the map
-        [self.mapView addOverlay:[self polyLine]];
+        NSArray *colorSegments = [MathController colorSegmentForLocations:self.run.locations.array];
+        [self.mapView addOverlays:colorSegments];
         
     } else {
         
@@ -120,14 +121,13 @@
     }
 }
 
-- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id < MKOverlay >)overlay
-{
-    if ([overlay isKindOfClass:[MKPolyline class]]) {
-        MKPolyline *polyLine = (MKPolyline *)overlay;
-        MKPolylineRenderer *aRenderer = [[MKPolylineRenderer alloc] initWithPolyline:polyLine];
-        aRenderer.strokeColor = [UIColor blackColor];
-        aRenderer.lineWidth = 3;
-        return aRenderer;
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay {
+    if ([overlay isKindOfClass:[MultiColorPolylineSegment class]]) {
+        MultiColorPolylineSegment *polyLine = (MultiColorPolylineSegment *)overlay;
+        MKPolylineRenderer *renderer = [[MKPolylineRenderer alloc] initWithPolyline:polyLine];
+        renderer.strokeColor = polyLine.color;
+        renderer.lineWidth = 3;
+        return renderer;
     }
     
     return nil;
