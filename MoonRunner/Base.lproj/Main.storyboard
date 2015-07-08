@@ -226,15 +226,15 @@
             </objects>
             <point key="canvasLocation" x="1266" y="52"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Badge Table View Controller-->
         <scene sceneID="qaP-Fa-ei6">
             <objects>
-                <tableViewController id="5W3-Hl-9CB" sceneMemberID="viewController">
+                <tableViewController id="5W3-Hl-9CB" customClass="BadgeTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ndx-aP-pzi">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BadgeCell" rowHeight="80" id="bgD-G2-VkO">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BadgeCell" rowHeight="80" id="bgD-G2-VkO" customClass="BadgeCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bgD-G2-VkO" id="brw-hu-bBc">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -297,6 +297,11 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
+                                    <outlet property="badgeImageView" destination="Za1-zW-dxT" id="U5c-6C-8Dg"/>
+                                    <outlet property="earnedLabel" destination="lLr-Pj-oWs" id="qE1-cb-ZYW"/>
+                                    <outlet property="goldImageView" destination="Wph-7Q-qyh" id="IRq-T2-CWm"/>
+                                    <outlet property="nameLabel" destination="AjO-3y-F5W" id="tYh-QI-b7H"/>
+                                    <outlet property="silverImageView" destination="MQm-uI-VOs" id="Pg2-Uv-Edr"/>
                                     <segue destination="qpN-Et-Z0r" kind="show" id="I6z-Oo-O3v"/>
                                 </connections>
                             </tableViewCell>

@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *imageName;
-@property (strong, nonatomic) NSString *description;
+@property (strong, nonatomic) NSString *information;
+@property float distance;
 
 @end
