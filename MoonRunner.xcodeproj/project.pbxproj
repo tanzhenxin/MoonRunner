@@ -65,6 +65,8 @@
 		FCA969EC1B4D2B05009DFB88 /* titania.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCA969C11B4D2B05009DFB88 /* titania.jpg */; };
 		FCA969ED1B4D2B05009DFB88 /* triton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCA969C21B4D2B05009DFB88 /* triton.jpg */; };
 		FCA969EE1B4D2B05009DFB88 /* umbriel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCA969C31B4D2B05009DFB88 /* umbriel.jpg */; };
+		FCD273C91B4D336400B213EB /* Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273C81B4D336400B213EB /* Badge.m */; };
+		FCD273CC1B4D33C300B213EB /* BadgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273CB1B4D33C300B213EB /* BadgeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +150,10 @@
 		FCA969C11B4D2B05009DFB88 /* titania.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = titania.jpg; sourceTree = "<group>"; };
 		FCA969C21B4D2B05009DFB88 /* triton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = triton.jpg; sourceTree = "<group>"; };
 		FCA969C31B4D2B05009DFB88 /* umbriel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbriel.jpg; sourceTree = "<group>"; };
+		FCD273C71B4D336400B213EB /* Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Badge.h; sourceTree = "<group>"; };
+		FCD273C81B4D336400B213EB /* Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Badge.m; sourceTree = "<group>"; };
+		FCD273CA1B4D33C300B213EB /* BadgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeController.h; sourceTree = "<group>"; };
+		FCD273CB1B4D33C300B213EB /* BadgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +201,8 @@
 				FCD273C51B4D2BE700B213EB /* Model */,
 				FC88D80C1B4BC65F00AEF4CF /* MathController.h */,
 				FC88D80D1B4BC65F00AEF4CF /* MathController.m */,
+				FCD273CA1B4D33C300B213EB /* BadgeController.h */,
+				FCD273CB1B4D33C300B213EB /* BadgeController.m */,
 				FC4AEF4E1B4CB5AD00319B7A /* MultiColorPolylineSegment.h */,
 				FC4AEF4F1B4CB5AD00319B7A /* MultiColorPolylineSegment.m */,
 				FC88D7DB1B4B739F00AEF4CF /* Images.xcassets */,
@@ -292,6 +300,8 @@
 				FC88D7FD1B4B757900AEF4CF /* Location.m */,
 				FC88D7F91B4B757900AEF4CF /* Run.h */,
 				FC88D7FA1B4B757900AEF4CF /* Run.m */,
+				FCD273C71B4D336400B213EB /* Badge.h */,
+				FCD273C81B4D336400B213EB /* Badge.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -462,7 +472,9 @@
 				FC88D80E1B4BC65F00AEF4CF /* MathController.m in Sources */,
 				FC88D7FB1B4B757900AEF4CF /* Run.m in Sources */,
 				FC88D80B1B4B895800AEF4CF /* DetailViewController.m in Sources */,
+				FCD273C91B4D336400B213EB /* Badge.m in Sources */,
 				FC4AEF501B4CB5AD00319B7A /* MultiColorPolylineSegment.m in Sources */,
+				FCD273CC1B4D33C300B213EB /* BadgeController.m in Sources */,
 				FC88D8081B4B893100AEF4CF /* NewRunViewController.m in Sources */,
 				FC88D7CE1B4B739F00AEF4CF /* AppDelegate.m in Sources */,
 				FC88D7CB1B4B739F00AEF4CF /* main.m in Sources */,
