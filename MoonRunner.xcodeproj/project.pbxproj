@@ -191,27 +191,16 @@
 		FC88D7C71B4B739F00AEF4CF /* MoonRunner */ = {
 			isa = PBXGroup;
 			children = (
-				FC88D7F61B4B753A00AEF4CF /* MoonRunner.xcdatamodeld */,
-				FC88D7FC1B4B757900AEF4CF /* Location.h */,
-				FC88D7FD1B4B757900AEF4CF /* Location.m */,
-				FC88D7F91B4B757900AEF4CF /* Run.h */,
-				FC88D7FA1B4B757900AEF4CF /* Run.m */,
-				FC88D7CC1B4B739F00AEF4CF /* AppDelegate.h */,
-				FC88D7CD1B4B739F00AEF4CF /* AppDelegate.m */,
-				FC88D8061B4B893100AEF4CF /* NewRunViewController.h */,
-				FC88D8071B4B893100AEF4CF /* NewRunViewController.m */,
+				FCD273C61B4D2C3A00B213EB /* ViewController */,
+				FCD273C51B4D2BE700B213EB /* Model */,
 				FC88D80C1B4BC65F00AEF4CF /* MathController.h */,
 				FC88D80D1B4BC65F00AEF4CF /* MathController.m */,
-				FC88D7D81B4B739F00AEF4CF /* Main.storyboard */,
-				FC88D8091B4B895800AEF4CF /* DetailViewController.h */,
-				FC88D80A1B4B895800AEF4CF /* DetailViewController.m */,
 				FC4AEF4E1B4CB5AD00319B7A /* MultiColorPolylineSegment.h */,
 				FC4AEF4F1B4CB5AD00319B7A /* MultiColorPolylineSegment.m */,
 				FC88D7DB1B4B739F00AEF4CF /* Images.xcassets */,
 				FC88D7DD1B4B739F00AEF4CF /* LaunchScreen.xib */,
+				FC88D7D81B4B739F00AEF4CF /* Main.storyboard */,
 				FC88D7C81B4B739F00AEF4CF /* Supporting Files */,
-				FC88D8031B4B7F7800AEF4CF /* HomeViewController.h */,
-				FC88D8041B4B7F7800AEF4CF /* HomeViewController.m */,
 				FCA969981B4D2B05009DFB88 /* Resources */,
 			);
 			path = MoonRunner;
@@ -220,6 +209,8 @@
 		FC88D7C81B4B739F00AEF4CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FC88D7CC1B4B739F00AEF4CF /* AppDelegate.h */,
+				FC88D7CD1B4B739F00AEF4CF /* AppDelegate.m */,
 				FC88D7C91B4B739F00AEF4CF /* Info.plist */,
 				FC88D7CA1B4B739F00AEF4CF /* main.m */,
 			);
@@ -291,6 +282,31 @@
 				FCA969C31B4D2B05009DFB88 /* umbriel.jpg */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FCD273C51B4D2BE700B213EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC88D7F61B4B753A00AEF4CF /* MoonRunner.xcdatamodeld */,
+				FC88D7FC1B4B757900AEF4CF /* Location.h */,
+				FC88D7FD1B4B757900AEF4CF /* Location.m */,
+				FC88D7F91B4B757900AEF4CF /* Run.h */,
+				FC88D7FA1B4B757900AEF4CF /* Run.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FCD273C61B4D2C3A00B213EB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC88D8031B4B7F7800AEF4CF /* HomeViewController.h */,
+				FC88D8041B4B7F7800AEF4CF /* HomeViewController.m */,
+				FC88D8091B4B895800AEF4CF /* DetailViewController.h */,
+				FC88D80A1B4B895800AEF4CF /* DetailViewController.m */,
+				FC88D8061B4B893100AEF4CF /* NewRunViewController.h */,
+				FC88D8071B4B893100AEF4CF /* NewRunViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

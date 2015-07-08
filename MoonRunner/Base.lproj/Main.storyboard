@@ -177,6 +177,12 @@
                                     <rect key="frame" x="114" y="160" width="154" height="82"/>
                                 </variation>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Lgx-ws-ABR">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="275" width="368" height="227"/>
+                                </variation>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -187,6 +193,7 @@
                                 <exclude reference="F73-qk-Ch6"/>
                                 <exclude reference="W5F-z4-ReV"/>
                                 <exclude reference="nfd-Dj-sUa"/>
+                                <exclude reference="Lgx-ws-ABR"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -197,11 +204,13 @@
                                 <include reference="F73-qk-Ch6"/>
                                 <include reference="W5F-z4-ReV"/>
                                 <include reference="nfd-Dj-sUa"/>
+                                <include reference="Lgx-ws-ABR"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="distanceLabel" destination="aLr-aO-drt" id="JEQ-2P-Nca"/>
+                        <outlet property="mapView" destination="Lgx-ws-ABR" id="HT3-Yo-zsC"/>
                         <outlet property="paceLabel" destination="Fnx-II-0Jy" id="OLb-uB-Ynm"/>
                         <outlet property="promptLabel" destination="nfd-Dj-sUa" id="crO-NX-cI1"/>
                         <outlet property="startButton" destination="F73-qk-Ch6" id="hlL-0H-GxJ"/>
