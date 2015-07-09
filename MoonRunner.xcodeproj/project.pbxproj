@@ -7,21 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FC4AEF501B4CB5AD00319B7A /* MultiColorPolylineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4AEF4F1B4CB5AD00319B7A /* MultiColorPolylineSegment.m */; };
 		FC88D7CB1B4B739F00AEF4CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D7CA1B4B739F00AEF4CF /* main.m */; };
-		FC88D7CE1B4B739F00AEF4CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D7CD1B4B739F00AEF4CF /* AppDelegate.m */; };
-		FC88D7DA1B4B739F00AEF4CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC88D7D81B4B739F00AEF4CF /* Main.storyboard */; };
 		FC88D7DC1B4B739F00AEF4CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC88D7DB1B4B739F00AEF4CF /* Images.xcassets */; };
-		FC88D7DF1B4B739F00AEF4CF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC88D7DD1B4B739F00AEF4CF /* LaunchScreen.xib */; };
 		FC88D7EB1B4B739F00AEF4CF /* MoonRunnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D7EA1B4B739F00AEF4CF /* MoonRunnerTests.m */; };
-		FC88D7F81B4B753A00AEF4CF /* MoonRunner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC88D7F61B4B753A00AEF4CF /* MoonRunner.xcdatamodeld */; };
-		FC88D7FB1B4B757900AEF4CF /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D7FA1B4B757900AEF4CF /* Run.m */; };
-		FC88D7FE1B4B757900AEF4CF /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D7FD1B4B757900AEF4CF /* Location.m */; };
 		FC88D8001B4B75D300AEF4CF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC88D7FF1B4B75D300AEF4CF /* MapKit.framework */; };
-		FC88D8051B4B7F7800AEF4CF /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D8041B4B7F7800AEF4CF /* HomeViewController.m */; };
-		FC88D8081B4B893100AEF4CF /* NewRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D8071B4B893100AEF4CF /* NewRunViewController.m */; };
-		FC88D80B1B4B895800AEF4CF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D80A1B4B895800AEF4CF /* DetailViewController.m */; };
-		FC88D80E1B4BC65F00AEF4CF /* MathController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC88D80D1B4BC65F00AEF4CF /* MathController.m */; };
 		FCA969C41B4D2B05009DFB88 /* ariel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCA969991B4D2B05009DFB88 /* ariel.jpg */; };
 		FCA969C51B4D2B05009DFB88 /* asteroid_belt.png in Resources */ = {isa = PBXBuildFile; fileRef = FCA9699A1B4D2B05009DFB88 /* asteroid_belt.png */; };
 		FCA969C61B4D2B05009DFB88 /* atmosphere.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCA9699B1B4D2B05009DFB88 /* atmosphere.jpg */; };
@@ -65,13 +54,24 @@
 		FCA969EC1B4D2B05009DFB88 /* titania.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCA969C11B4D2B05009DFB88 /* titania.jpg */; };
 		FCA969ED1B4D2B05009DFB88 /* triton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCA969C21B4D2B05009DFB88 /* triton.jpg */; };
 		FCA969EE1B4D2B05009DFB88 /* umbriel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FCA969C31B4D2B05009DFB88 /* umbriel.jpg */; };
-		FCD273C91B4D336400B213EB /* Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273C81B4D336400B213EB /* Badge.m */; };
-		FCD273CC1B4D33C300B213EB /* BadgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273CB1B4D33C300B213EB /* BadgeController.m */; };
-		FCD273CF1B4D7AE700B213EB /* BadgeEarnStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273CE1B4D7AE700B213EB /* BadgeEarnStatus.m */; };
-		FCD273D51B4D7E5100B213EB /* BadgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273D41B4D7E5100B213EB /* BadgeCell.m */; };
-		FCD273D81B4D800000B213EB /* BadgeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273D71B4D800000B213EB /* BadgeTableViewController.m */; };
-		FCD273E11B4E0DD300B213EB /* BadgeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273E01B4E0DD300B213EB /* BadgeDetailViewController.m */; };
-		FCD273E41B4E27D000B213EB /* BadgeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273E31B4E27D000B213EB /* BadgeAnnotation.m */; };
+		FCD2740D1B4E5CF300B213EB /* BadgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273E71B4E5CF300B213EB /* BadgeCell.m */; };
+		FCD2740E1B4E5CF300B213EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCD273E81B4E5CF300B213EB /* LaunchScreen.xib */; };
+		FCD2740F1B4E5CF300B213EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD273EA1B4E5CF300B213EB /* Main.storyboard */; };
+		FCD274101B4E5CF300B213EB /* MultiColorPolylineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273ED1B4E5CF300B213EB /* MultiColorPolylineSegment.m */; };
+		FCD274111B4E5CF300B213EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273F01B4E5CF300B213EB /* AppDelegate.m */; };
+		FCD274121B4E5CF300B213EB /* BadgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273F21B4E5CF300B213EB /* BadgeController.m */; };
+		FCD274131B4E5CF300B213EB /* MathController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273F41B4E5CF300B213EB /* MathController.m */; };
+		FCD274141B4E5CF300B213EB /* BadgeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273F71B4E5CF300B213EB /* BadgeDetailViewController.m */; };
+		FCD274151B4E5CF300B213EB /* BadgeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273F91B4E5CF300B213EB /* BadgeTableViewController.m */; };
+		FCD274161B4E5CF300B213EB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273FB1B4E5CF300B213EB /* DetailViewController.m */; };
+		FCD274171B4E5CF300B213EB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273FD1B4E5CF300B213EB /* HomeViewController.m */; };
+		FCD274181B4E5CF300B213EB /* NewRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273FF1B4E5CF300B213EB /* NewRunViewController.m */; };
+		FCD274191B4E5CF300B213EB /* Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD274021B4E5CF300B213EB /* Badge.m */; };
+		FCD2741A1B4E5CF300B213EB /* BadgeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD274041B4E5CF300B213EB /* BadgeAnnotation.m */; };
+		FCD2741B1B4E5CF300B213EB /* BadgeEarnStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD274061B4E5CF300B213EB /* BadgeEarnStatus.m */; };
+		FCD2741C1B4E5CF300B213EB /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD274081B4E5CF300B213EB /* Location.m */; };
+		FCD2741D1B4E5CF300B213EB /* MoonRunner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCD274091B4E5CF300B213EB /* MoonRunner.xcdatamodeld */; };
+		FCD2741E1B4E5CF300B213EB /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD2740C1B4E5CF300B213EB /* Run.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,33 +85,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC4AEF4E1B4CB5AD00319B7A /* MultiColorPolylineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiColorPolylineSegment.h; sourceTree = "<group>"; };
-		FC4AEF4F1B4CB5AD00319B7A /* MultiColorPolylineSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiColorPolylineSegment.m; sourceTree = "<group>"; };
 		FC88D7C51B4B739F00AEF4CF /* MoonRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC88D7C91B4B739F00AEF4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC88D7CA1B4B739F00AEF4CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FC88D7CC1B4B739F00AEF4CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FC88D7CD1B4B739F00AEF4CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FC88D7D91B4B739F00AEF4CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC88D7DB1B4B739F00AEF4CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FC88D7DE1B4B739F00AEF4CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FC88D7E41B4B739F00AEF4CF /* MoonRunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonRunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC88D7E91B4B739F00AEF4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC88D7EA1B4B739F00AEF4CF /* MoonRunnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoonRunnerTests.m; sourceTree = "<group>"; };
-		FC88D7F71B4B753A00AEF4CF /* MoonRunner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoonRunner.xcdatamodel; sourceTree = "<group>"; };
-		FC88D7F91B4B757900AEF4CF /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
-		FC88D7FA1B4B757900AEF4CF /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
-		FC88D7FC1B4B757900AEF4CF /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
-		FC88D7FD1B4B757900AEF4CF /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		FC88D7FF1B4B75D300AEF4CF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		FC88D8031B4B7F7800AEF4CF /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		FC88D8041B4B7F7800AEF4CF /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
-		FC88D8061B4B893100AEF4CF /* NewRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRunViewController.h; sourceTree = "<group>"; };
-		FC88D8071B4B893100AEF4CF /* NewRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRunViewController.m; sourceTree = "<group>"; };
-		FC88D8091B4B895800AEF4CF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		FC88D80A1B4B895800AEF4CF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		FC88D80C1B4BC65F00AEF4CF /* MathController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathController.h; sourceTree = "<group>"; };
-		FC88D80D1B4BC65F00AEF4CF /* MathController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathController.m; sourceTree = "<group>"; };
 		FCA969991B4D2B05009DFB88 /* ariel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ariel.jpg; sourceTree = "<group>"; };
 		FCA9699A1B4D2B05009DFB88 /* asteroid_belt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid_belt.png; sourceTree = "<group>"; };
 		FCA9699B1B4D2B05009DFB88 /* atmosphere.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = atmosphere.jpg; sourceTree = "<group>"; };
@@ -155,20 +136,39 @@
 		FCA969C11B4D2B05009DFB88 /* titania.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = titania.jpg; sourceTree = "<group>"; };
 		FCA969C21B4D2B05009DFB88 /* triton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = triton.jpg; sourceTree = "<group>"; };
 		FCA969C31B4D2B05009DFB88 /* umbriel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = umbriel.jpg; sourceTree = "<group>"; };
-		FCD273C71B4D336400B213EB /* Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Badge.h; sourceTree = "<group>"; };
-		FCD273C81B4D336400B213EB /* Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Badge.m; sourceTree = "<group>"; };
-		FCD273CA1B4D33C300B213EB /* BadgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeController.h; sourceTree = "<group>"; };
-		FCD273CB1B4D33C300B213EB /* BadgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeController.m; sourceTree = "<group>"; };
-		FCD273CD1B4D7AE700B213EB /* BadgeEarnStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeEarnStatus.h; sourceTree = "<group>"; };
-		FCD273CE1B4D7AE700B213EB /* BadgeEarnStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeEarnStatus.m; sourceTree = "<group>"; };
-		FCD273D31B4D7E5100B213EB /* BadgeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeCell.h; sourceTree = "<group>"; };
-		FCD273D41B4D7E5100B213EB /* BadgeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeCell.m; sourceTree = "<group>"; };
-		FCD273D61B4D800000B213EB /* BadgeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeTableViewController.h; sourceTree = "<group>"; };
-		FCD273D71B4D800000B213EB /* BadgeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeTableViewController.m; sourceTree = "<group>"; };
-		FCD273DF1B4E0DD300B213EB /* BadgeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeDetailViewController.h; sourceTree = "<group>"; };
-		FCD273E01B4E0DD300B213EB /* BadgeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeDetailViewController.m; sourceTree = "<group>"; };
-		FCD273E21B4E27D000B213EB /* BadgeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeAnnotation.h; sourceTree = "<group>"; };
-		FCD273E31B4E27D000B213EB /* BadgeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeAnnotation.m; sourceTree = "<group>"; };
+		FCD273E61B4E5CF300B213EB /* BadgeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeCell.h; sourceTree = "<group>"; };
+		FCD273E71B4E5CF300B213EB /* BadgeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeCell.m; sourceTree = "<group>"; };
+		FCD273E91B4E5CF300B213EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FCD273EB1B4E5CF300B213EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCD273EC1B4E5CF300B213EB /* MultiColorPolylineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiColorPolylineSegment.h; sourceTree = "<group>"; };
+		FCD273ED1B4E5CF300B213EB /* MultiColorPolylineSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiColorPolylineSegment.m; sourceTree = "<group>"; };
+		FCD273EF1B4E5CF300B213EB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FCD273F01B4E5CF300B213EB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FCD273F11B4E5CF300B213EB /* BadgeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeController.h; sourceTree = "<group>"; };
+		FCD273F21B4E5CF300B213EB /* BadgeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeController.m; sourceTree = "<group>"; };
+		FCD273F31B4E5CF300B213EB /* MathController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathController.h; sourceTree = "<group>"; };
+		FCD273F41B4E5CF300B213EB /* MathController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathController.m; sourceTree = "<group>"; };
+		FCD273F61B4E5CF300B213EB /* BadgeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeDetailViewController.h; sourceTree = "<group>"; };
+		FCD273F71B4E5CF300B213EB /* BadgeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeDetailViewController.m; sourceTree = "<group>"; };
+		FCD273F81B4E5CF300B213EB /* BadgeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeTableViewController.h; sourceTree = "<group>"; };
+		FCD273F91B4E5CF300B213EB /* BadgeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeTableViewController.m; sourceTree = "<group>"; };
+		FCD273FA1B4E5CF300B213EB /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		FCD273FB1B4E5CF300B213EB /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FCD273FC1B4E5CF300B213EB /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FCD273FD1B4E5CF300B213EB /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FCD273FE1B4E5CF300B213EB /* NewRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewRunViewController.h; sourceTree = "<group>"; };
+		FCD273FF1B4E5CF300B213EB /* NewRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewRunViewController.m; sourceTree = "<group>"; };
+		FCD274011B4E5CF300B213EB /* Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Badge.h; sourceTree = "<group>"; };
+		FCD274021B4E5CF300B213EB /* Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Badge.m; sourceTree = "<group>"; };
+		FCD274031B4E5CF300B213EB /* BadgeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeAnnotation.h; sourceTree = "<group>"; };
+		FCD274041B4E5CF300B213EB /* BadgeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeAnnotation.m; sourceTree = "<group>"; };
+		FCD274051B4E5CF300B213EB /* BadgeEarnStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeEarnStatus.h; sourceTree = "<group>"; };
+		FCD274061B4E5CF300B213EB /* BadgeEarnStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeEarnStatus.m; sourceTree = "<group>"; };
+		FCD274071B4E5CF300B213EB /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		FCD274081B4E5CF300B213EB /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		FCD2740A1B4E5CF300B213EB /* MoonRunner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoonRunner.xcdatamodel; sourceTree = "<group>"; };
+		FCD2740B1B4E5CF300B213EB /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
+		FCD2740C1B4E5CF300B213EB /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,17 +212,10 @@
 		FC88D7C71B4B739F00AEF4CF /* MoonRunner */ = {
 			isa = PBXGroup;
 			children = (
-				FCD273C61B4D2C3A00B213EB /* ViewController */,
-				FCD273C51B4D2BE700B213EB /* Model */,
-				FC88D80C1B4BC65F00AEF4CF /* MathController.h */,
-				FC88D80D1B4BC65F00AEF4CF /* MathController.m */,
-				FCD273CA1B4D33C300B213EB /* BadgeController.h */,
-				FCD273CB1B4D33C300B213EB /* BadgeController.m */,
-				FC4AEF4E1B4CB5AD00319B7A /* MultiColorPolylineSegment.h */,
-				FC4AEF4F1B4CB5AD00319B7A /* MultiColorPolylineSegment.m */,
+				FCD273E51B4E5CF300B213EB /* View */,
+				FCD273EE1B4E5CF300B213EB /* Controller */,
+				FCD274001B4E5CF300B213EB /* Model */,
 				FC88D7DB1B4B739F00AEF4CF /* Images.xcassets */,
-				FC88D7DD1B4B739F00AEF4CF /* LaunchScreen.xib */,
-				FC88D7D81B4B739F00AEF4CF /* Main.storyboard */,
 				FC88D7C81B4B739F00AEF4CF /* Supporting Files */,
 				FCA969981B4D2B05009DFB88 /* Resources */,
 			);
@@ -232,8 +225,6 @@
 		FC88D7C81B4B739F00AEF4CF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FC88D7CC1B4B739F00AEF4CF /* AppDelegate.h */,
-				FC88D7CD1B4B739F00AEF4CF /* AppDelegate.m */,
 				FC88D7C91B4B739F00AEF4CF /* Info.plist */,
 				FC88D7CA1B4B739F00AEF4CF /* main.m */,
 			);
@@ -307,41 +298,66 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		FCD273C51B4D2BE700B213EB /* Model */ = {
+		FCD273E51B4E5CF300B213EB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FC88D7F61B4B753A00AEF4CF /* MoonRunner.xcdatamodeld */,
-				FC88D7FC1B4B757900AEF4CF /* Location.h */,
-				FC88D7FD1B4B757900AEF4CF /* Location.m */,
-				FC88D7F91B4B757900AEF4CF /* Run.h */,
-				FC88D7FA1B4B757900AEF4CF /* Run.m */,
-				FCD273C71B4D336400B213EB /* Badge.h */,
-				FCD273C81B4D336400B213EB /* Badge.m */,
-				FCD273CD1B4D7AE700B213EB /* BadgeEarnStatus.h */,
-				FCD273CE1B4D7AE700B213EB /* BadgeEarnStatus.m */,
-				FCD273E21B4E27D000B213EB /* BadgeAnnotation.h */,
-				FCD273E31B4E27D000B213EB /* BadgeAnnotation.m */,
+				FCD273E61B4E5CF300B213EB /* BadgeCell.h */,
+				FCD273E71B4E5CF300B213EB /* BadgeCell.m */,
+				FCD273E81B4E5CF300B213EB /* LaunchScreen.xib */,
+				FCD273EA1B4E5CF300B213EB /* Main.storyboard */,
+				FCD273EC1B4E5CF300B213EB /* MultiColorPolylineSegment.h */,
+				FCD273ED1B4E5CF300B213EB /* MultiColorPolylineSegment.m */,
 			);
-			name = Model;
+			path = View;
 			sourceTree = "<group>";
 		};
-		FCD273C61B4D2C3A00B213EB /* ViewController */ = {
+		FCD273EE1B4E5CF300B213EB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FC88D8031B4B7F7800AEF4CF /* HomeViewController.h */,
-				FC88D8041B4B7F7800AEF4CF /* HomeViewController.m */,
-				FC88D8091B4B895800AEF4CF /* DetailViewController.h */,
-				FC88D80A1B4B895800AEF4CF /* DetailViewController.m */,
-				FC88D8061B4B893100AEF4CF /* NewRunViewController.h */,
-				FC88D8071B4B893100AEF4CF /* NewRunViewController.m */,
-				FCD273D31B4D7E5100B213EB /* BadgeCell.h */,
-				FCD273D41B4D7E5100B213EB /* BadgeCell.m */,
-				FCD273D61B4D800000B213EB /* BadgeTableViewController.h */,
-				FCD273D71B4D800000B213EB /* BadgeTableViewController.m */,
-				FCD273DF1B4E0DD300B213EB /* BadgeDetailViewController.h */,
-				FCD273E01B4E0DD300B213EB /* BadgeDetailViewController.m */,
+				FCD273EF1B4E5CF300B213EB /* AppDelegate.h */,
+				FCD273F01B4E5CF300B213EB /* AppDelegate.m */,
+				FCD273F11B4E5CF300B213EB /* BadgeController.h */,
+				FCD273F21B4E5CF300B213EB /* BadgeController.m */,
+				FCD273F31B4E5CF300B213EB /* MathController.h */,
+				FCD273F41B4E5CF300B213EB /* MathController.m */,
+				FCD273F51B4E5CF300B213EB /* ViewController */,
 			);
-			name = ViewController;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FCD273F51B4E5CF300B213EB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FCD273F61B4E5CF300B213EB /* BadgeDetailViewController.h */,
+				FCD273F71B4E5CF300B213EB /* BadgeDetailViewController.m */,
+				FCD273F81B4E5CF300B213EB /* BadgeTableViewController.h */,
+				FCD273F91B4E5CF300B213EB /* BadgeTableViewController.m */,
+				FCD273FA1B4E5CF300B213EB /* DetailViewController.h */,
+				FCD273FB1B4E5CF300B213EB /* DetailViewController.m */,
+				FCD273FC1B4E5CF300B213EB /* HomeViewController.h */,
+				FCD273FD1B4E5CF300B213EB /* HomeViewController.m */,
+				FCD273FE1B4E5CF300B213EB /* NewRunViewController.h */,
+				FCD273FF1B4E5CF300B213EB /* NewRunViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FCD274001B4E5CF300B213EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCD274011B4E5CF300B213EB /* Badge.h */,
+				FCD274021B4E5CF300B213EB /* Badge.m */,
+				FCD274031B4E5CF300B213EB /* BadgeAnnotation.h */,
+				FCD274041B4E5CF300B213EB /* BadgeAnnotation.m */,
+				FCD274051B4E5CF300B213EB /* BadgeEarnStatus.h */,
+				FCD274061B4E5CF300B213EB /* BadgeEarnStatus.m */,
+				FCD274071B4E5CF300B213EB /* Location.h */,
+				FCD274081B4E5CF300B213EB /* Location.m */,
+				FCD274091B4E5CF300B213EB /* MoonRunner.xcdatamodeld */,
+				FCD2740B1B4E5CF300B213EB /* Run.h */,
+				FCD2740C1B4E5CF300B213EB /* Run.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -438,13 +454,11 @@
 				FCA969E41B4D2B05009DFB88 /* red-btn.png in Resources */,
 				FCA969DB1B4D2B05009DFB88 /* magnetotail.png in Resources */,
 				FCA969E51B4D2B05009DFB88 /* rhea.jpg in Resources */,
-				FC88D7DA1B4B739F00AEF4CF /* Main.storyboard in Resources */,
 				FCA969C71B4D2B05009DFB88 /* badges.txt in Resources */,
 				FCA969D01B4D2B05009DFB88 /* europa.jpg in Resources */,
 				FCA969D11B4D2B05009DFB88 /* ganymede.jpg in Resources */,
 				FCA969C61B4D2B05009DFB88 /* atmosphere.jpg in Resources */,
 				FCA969C41B4D2B05009DFB88 /* ariel.jpg in Resources */,
-				FC88D7DF1B4B739F00AEF4CF /* LaunchScreen.xib in Resources */,
 				FCA969D31B4D2B05009DFB88 /* iapetus.jpg in Resources */,
 				FCA969EB1B4D2B05009DFB88 /* titan.jpg in Resources */,
 				FCA969D61B4D2B05009DFB88 /* Icon-Spotlight.png in Resources */,
@@ -456,6 +470,7 @@
 				FCA969E11B4D2B05009DFB88 /* oberon.jpg in Resources */,
 				FCA969EA1B4D2B05009DFB88 /* tethys.jpg in Resources */,
 				FCA969EE1B4D2B05009DFB88 /* umbriel.jpg in Resources */,
+				FCD2740E1B4E5CF300B213EB /* LaunchScreen.xib in Resources */,
 				FC88D7DC1B4B739F00AEF4CF /* Images.xcassets in Resources */,
 				FCA969CE1B4D2B05009DFB88 /* earth.jpg in Resources */,
 				FCA969CF1B4D2B05009DFB88 /* enceladus.jpg in Resources */,
@@ -465,6 +480,7 @@
 				FCA969CD1B4D2B05009DFB88 /* dione.jpg in Resources */,
 				FCA969DE1B4D2B05009DFB88 /* mimas.jpg in Resources */,
 				FCA969E91B4D2B05009DFB88 /* success.wav in Resources */,
+				FCD2740F1B4E5CF300B213EB /* Main.storyboard in Resources */,
 				FCA969DC1B4D2B05009DFB88 /* mapPin@2x.png in Resources */,
 				FCA969E71B4D2B05009DFB88 /* spaceship-gold.png in Resources */,
 				FCA969DD1B4D2B05009DFB88 /* mars.jpg in Resources */,
@@ -492,23 +508,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC88D7FE1B4B757900AEF4CF /* Location.m in Sources */,
-				FC88D7F81B4B753A00AEF4CF /* MoonRunner.xcdatamodeld in Sources */,
-				FC88D80E1B4BC65F00AEF4CF /* MathController.m in Sources */,
-				FCD273D51B4D7E5100B213EB /* BadgeCell.m in Sources */,
-				FCD273E41B4E27D000B213EB /* BadgeAnnotation.m in Sources */,
-				FC88D7FB1B4B757900AEF4CF /* Run.m in Sources */,
-				FC88D80B1B4B895800AEF4CF /* DetailViewController.m in Sources */,
-				FCD273CF1B4D7AE700B213EB /* BadgeEarnStatus.m in Sources */,
-				FCD273C91B4D336400B213EB /* Badge.m in Sources */,
-				FC4AEF501B4CB5AD00319B7A /* MultiColorPolylineSegment.m in Sources */,
-				FCD273CC1B4D33C300B213EB /* BadgeController.m in Sources */,
-				FCD273D81B4D800000B213EB /* BadgeTableViewController.m in Sources */,
-				FCD273E11B4E0DD300B213EB /* BadgeDetailViewController.m in Sources */,
-				FC88D8081B4B893100AEF4CF /* NewRunViewController.m in Sources */,
-				FC88D7CE1B4B739F00AEF4CF /* AppDelegate.m in Sources */,
+				FCD274191B4E5CF300B213EB /* Badge.m in Sources */,
+				FCD274121B4E5CF300B213EB /* BadgeController.m in Sources */,
+				FCD2740D1B4E5CF300B213EB /* BadgeCell.m in Sources */,
+				FCD274141B4E5CF300B213EB /* BadgeDetailViewController.m in Sources */,
+				FCD274151B4E5CF300B213EB /* BadgeTableViewController.m in Sources */,
+				FCD274161B4E5CF300B213EB /* DetailViewController.m in Sources */,
+				FCD2741D1B4E5CF300B213EB /* MoonRunner.xcdatamodeld in Sources */,
+				FCD274171B4E5CF300B213EB /* HomeViewController.m in Sources */,
+				FCD2741E1B4E5CF300B213EB /* Run.m in Sources */,
+				FCD274181B4E5CF300B213EB /* NewRunViewController.m in Sources */,
 				FC88D7CB1B4B739F00AEF4CF /* main.m in Sources */,
-				FC88D8051B4B7F7800AEF4CF /* HomeViewController.m in Sources */,
+				FCD2741A1B4E5CF300B213EB /* BadgeAnnotation.m in Sources */,
+				FCD2741B1B4E5CF300B213EB /* BadgeEarnStatus.m in Sources */,
+				FCD274101B4E5CF300B213EB /* MultiColorPolylineSegment.m in Sources */,
+				FCD274111B4E5CF300B213EB /* AppDelegate.m in Sources */,
+				FCD2741C1B4E5CF300B213EB /* Location.m in Sources */,
+				FCD274131B4E5CF300B213EB /* MathController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,20 +547,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FC88D7D81B4B739F00AEF4CF /* Main.storyboard */ = {
+		FCD273E81B4E5CF300B213EB /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FC88D7D91B4B739F00AEF4CF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FC88D7DD1B4B739F00AEF4CF /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FC88D7DE1B4B739F00AEF4CF /* Base */,
+				FCD273E91B4E5CF300B213EB /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		FCD273EA1B4E5CF300B213EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCD273EB1B4E5CF300B213EB /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -717,12 +733,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FC88D7F61B4B753A00AEF4CF /* MoonRunner.xcdatamodeld */ = {
+		FCD274091B4E5CF300B213EB /* MoonRunner.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FC88D7F71B4B753A00AEF4CF /* MoonRunner.xcdatamodel */,
+				FCD2740A1B4E5CF300B213EB /* MoonRunner.xcdatamodel */,
 			);
-			currentVersion = FC88D7F71B4B753A00AEF4CF /* MoonRunner.xcdatamodel */;
+			currentVersion = FCD2740A1B4E5CF300B213EB /* MoonRunner.xcdatamodel */;
 			path = MoonRunner.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
