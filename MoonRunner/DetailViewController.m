@@ -12,6 +12,8 @@
 #import "Run.h"
 #import "Location.h"
 #import "MultiColorPolylineSegment.h"
+#import "BadgeController.h"
+#import "Badge.h"
 
 @interface DetailViewController () <MKMapViewDelegate>
 
@@ -20,10 +22,29 @@
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *paceLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *badgeImageView;
+@property (weak, nonatomic) IBOutlet UIButton *infoButton;
 
 @end
 
 @implementation DetailViewController
+- (IBAction)infoButtonPressed:(id)sender {
+    Badge *badge = [[BadgeController defaultController] bestBadgeForDistance:self.run.distance.floatValue];
+    UIAlertView *alertView = [[UIAlertView alloc]
+                              initWithTitle:badge.name
+                              message:badge.information
+                              delegate:nil
+                              cancelButtonTitle:@"OK"
+                              otherButtonTitles:nil];
+    [alertView show];
+}
+
+- (IBAction)toggleSpaceMode:(id)sender {
+    UISwitch *switcher = (UISwitch *)sender;
+    self.mapView.hidden = switcher.isOn;
+    self.badgeImageView.hidden = !switcher.isOn;
+    self.infoButton.hidden = !switcher.isOn;
+}
 
 #pragma mark - Managing the detail item
 
@@ -44,6 +65,9 @@
     self.timeLabel.text = [NSString stringWithFormat:@"Time: %@",  [MathController stringifySecondCount:self.run.duration.intValue usingLongFormat:YES]];
     
     self.paceLabel.text = [NSString stringWithFormat:@"Pace: %@",  [MathController stringifyAvgPaceFromDict:self.run.distance.floatValue overTime:self.run.duration.intValue]];
+    
+    Badge *badge = [[BadgeController defaultController] bestBadgeForDistance:self.run.distance.floatValue];
+    self.badgeImageView.image = [UIImage imageNamed:badge.imageName];
     
     [self loadMap];
 }
@@ -136,6 +160,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configureView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.badgeImageView.hidden = YES;
+    self.infoButton.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -544,6 +544,42 @@
                                     <rect key="frame" x="56" y="489" width="288" height="21"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NCb-rd-WEO">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="318"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eG5-er-gaR">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="info.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="302" y="235" width="64" height="59"/>
+                                </variation>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="j3y-i5-lXc" eventType="touchUpInside" id="5wH-N0-wAh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPACE MODE" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ius-BZ-x87">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="309" y="509" width="57" height="44"/>
+                                </variation>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="COX-Ym-sfM">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="309" y="561" width="51" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="toggleSpaceMode:" destination="j3y-i5-lXc" eventType="valueChanged" id="eYJ-xF-3yc"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -553,6 +589,10 @@
                                 <exclude reference="4pC-Sb-cHb"/>
                                 <exclude reference="Rdz-5d-HGd"/>
                                 <exclude reference="o4T-rr-ySo"/>
+                                <exclude reference="NCb-rd-WEO"/>
+                                <exclude reference="eG5-er-gaR"/>
+                                <exclude reference="ius-BZ-x87"/>
+                                <exclude reference="COX-Ym-sfM"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -562,12 +602,18 @@
                                 <include reference="4pC-Sb-cHb"/>
                                 <include reference="Rdz-5d-HGd"/>
                                 <include reference="o4T-rr-ySo"/>
+                                <include reference="NCb-rd-WEO"/>
+                                <include reference="eG5-er-gaR"/>
+                                <include reference="ius-BZ-x87"/>
+                                <include reference="COX-Ym-sfM"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="badgeImageView" destination="NCb-rd-WEO" id="CSH-yT-KEu"/>
                         <outlet property="dateLabel" destination="4pC-Sb-cHb" id="DGX-SC-1a0"/>
                         <outlet property="distanceLabel" destination="HKL-lp-gqY" id="EKo-wc-8BL"/>
+                        <outlet property="infoButton" destination="eG5-er-gaR" id="PH8-tI-mgq"/>
                         <outlet property="mapView" destination="ALm-UB-R9s" id="k41-FN-z8N"/>
                         <outlet property="paceLabel" destination="o4T-rr-ySo" id="hDp-j7-8PO"/>
                         <outlet property="timeLabel" destination="Rdz-5d-HGd" id="4LY-Uo-0uI"/>
