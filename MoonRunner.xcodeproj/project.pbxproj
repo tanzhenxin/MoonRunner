@@ -72,6 +72,7 @@
 		FCD2741C1B4E5CF300B213EB /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD274081B4E5CF300B213EB /* Location.m */; };
 		FCD2741D1B4E5CF300B213EB /* MoonRunner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCD274091B4E5CF300B213EB /* MoonRunner.xcdatamodeld */; };
 		FCD2741E1B4E5CF300B213EB /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD2740C1B4E5CF300B213EB /* Run.m */; };
+		FCD274221B4E5E1800B213EB /* WGS84TOGCJ02.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD274211B4E5E1800B213EB /* WGS84TOGCJ02.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +89,7 @@
 		FC88D7C51B4B739F00AEF4CF /* MoonRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoonRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC88D7C91B4B739F00AEF4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC88D7CA1B4B739F00AEF4CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FC88D7DB1B4B739F00AEF4CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC88D7DB1B4B739F00AEF4CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		FC88D7E41B4B739F00AEF4CF /* MoonRunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoonRunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC88D7E91B4B739F00AEF4CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC88D7EA1B4B739F00AEF4CF /* MoonRunnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoonRunnerTests.m; sourceTree = "<group>"; };
@@ -169,6 +170,8 @@
 		FCD2740A1B4E5CF300B213EB /* MoonRunner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoonRunner.xcdatamodel; sourceTree = "<group>"; };
 		FCD2740B1B4E5CF300B213EB /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
 		FCD2740C1B4E5CF300B213EB /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
+		FCD274201B4E5E1800B213EB /* WGS84TOGCJ02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGS84TOGCJ02.h; sourceTree = "<group>"; };
+		FCD274211B4E5E1800B213EB /* WGS84TOGCJ02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGS84TOGCJ02.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,7 +218,7 @@
 				FCD273E51B4E5CF300B213EB /* View */,
 				FCD273EE1B4E5CF300B213EB /* Controller */,
 				FCD274001B4E5CF300B213EB /* Model */,
-				FC88D7DB1B4B739F00AEF4CF /* Images.xcassets */,
+				FCD2741F1B4E5DE000B213EB /* Utils */,
 				FC88D7C81B4B739F00AEF4CF /* Supporting Files */,
 				FCA969981B4D2B05009DFB88 /* Resources */,
 			);
@@ -251,6 +254,7 @@
 		FCA969981B4D2B05009DFB88 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FC88D7DB1B4B739F00AEF4CF /* Images.xcassets */,
 				FCA969991B4D2B05009DFB88 /* ariel.jpg */,
 				FCA9699A1B4D2B05009DFB88 /* asteroid_belt.png */,
 				FCA9699B1B4D2B05009DFB88 /* atmosphere.jpg */,
@@ -358,6 +362,15 @@
 				FCD2740C1B4E5CF300B213EB /* Run.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FCD2741F1B4E5DE000B213EB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FCD274201B4E5E1800B213EB /* WGS84TOGCJ02.h */,
+				FCD274211B4E5E1800B213EB /* WGS84TOGCJ02.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,6 +528,7 @@
 				FCD274151B4E5CF300B213EB /* BadgeTableViewController.m in Sources */,
 				FCD274161B4E5CF300B213EB /* DetailViewController.m in Sources */,
 				FCD2741D1B4E5CF300B213EB /* MoonRunner.xcdatamodeld in Sources */,
+				FCD274221B4E5E1800B213EB /* WGS84TOGCJ02.m in Sources */,
 				FCD274171B4E5CF300B213EB /* HomeViewController.m in Sources */,
 				FCD2741E1B4E5CF300B213EB /* Run.m in Sources */,
 				FCD274181B4E5CF300B213EB /* NewRunViewController.m in Sources */,

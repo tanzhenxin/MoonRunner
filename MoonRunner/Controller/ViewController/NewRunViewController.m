@@ -16,6 +16,7 @@
 #import "Run.h"
 #import "Location.h"
 #import "Badge.h"
+#import "WGS84TOGCJ02.h"
 
 static NSString * const detailSegueName = @"RunDetails";
 
@@ -64,6 +65,8 @@ static NSString * const detailSegueName = @"RunDetails";
                                                 userInfo:nil
                                                  repeats:true];
     [self startLocationUpdates];
+    [self.mapView setShowsUserLocation:YES];
+//    [self.mapView setCenterCoordinate:self.mapView.userLocation.coordinate animated:true];
 }
 
 - (IBAction)stopPressed:(id)sender {
@@ -200,11 +203,20 @@ static NSString * const detailSegueName = @"RunDetails";
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    for (CLLocation *newLocation in locations) {
-        NSDate *timestamp = newLocation.timestamp;
+    for (CLLocation *location in locations) {
+        NSDate *timestamp = location.timestamp;
         NSTimeInterval interval = [timestamp timeIntervalSinceNow];
         
-        if (fabs(interval) < 10.0 && newLocation.horizontalAccuracy < 20) {
+        if (fabs(interval) < 10.0 && location.horizontalAccuracy < 20) {
+            
+            // translate coordination if in China.
+            CLLocation *newLocation;
+            if (![WGS84TOGCJ02 isLocationOutOfChina:location.coordinate]) {
+                newLocation = [[CLLocation alloc] initWithCoordinate:[WGS84TOGCJ02 transformFromWGSToGCJ:location.coordinate] altitude:location.altitude horizontalAccuracy:location.horizontalAccuracy verticalAccuracy:location.verticalAccuracy timestamp:location.timestamp];
+            } else {
+                newLocation = location;
+            }
+            
             if (self.locations.count > 0) {
                 self.distance += [newLocation distanceFromLocation:self.locations.lastObject];
                 
