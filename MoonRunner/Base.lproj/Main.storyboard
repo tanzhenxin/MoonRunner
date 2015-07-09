@@ -122,7 +122,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="131" width="368" height="21"/>
+                                    <rect key="frame" x="16" y="72" width="368" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWZ-WU-ax1">
@@ -131,7 +131,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="190" width="368" height="21"/>
+                                    <rect key="frame" x="16" y="131" width="368" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pace:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fnx-II-0Jy">
@@ -140,7 +140,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="246" width="368" height="21"/>
+                                    <rect key="frame" x="22" y="190" width="368" height="21"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F73-qk-Ch6">
@@ -177,15 +177,30 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="114" y="160" width="154" height="82"/>
+                                    <rect key="frame" x="123" y="101" width="154" height="82"/>
                                 </variation>
                             </label>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Lgx-ws-ABR">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="275" width="368" height="227"/>
+                                    <rect key="frame" x="16" y="232" width="368" height="174"/>
                                 </variation>
                             </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lVP-Bs-axA">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="159" y="419" width="64" height="59"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Badge" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKg-E2-3ym">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="10" y="481" width="362" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -197,6 +212,8 @@
                                 <exclude reference="W5F-z4-ReV"/>
                                 <exclude reference="nfd-Dj-sUa"/>
                                 <exclude reference="Lgx-ws-ABR"/>
+                                <exclude reference="lVP-Bs-axA"/>
+                                <exclude reference="xKg-E2-3ym"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -208,12 +225,16 @@
                                 <include reference="W5F-z4-ReV"/>
                                 <include reference="nfd-Dj-sUa"/>
                                 <include reference="Lgx-ws-ABR"/>
+                                <include reference="lVP-Bs-axA"/>
+                                <include reference="xKg-E2-3ym"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="distanceLabel" destination="aLr-aO-drt" id="JEQ-2P-Nca"/>
                         <outlet property="mapView" destination="Lgx-ws-ABR" id="HT3-Yo-zsC"/>
+                        <outlet property="nextBadgeImageView" destination="lVP-Bs-axA" id="Rs3-Gl-6DF"/>
+                        <outlet property="nextBadgeLabel" destination="xKg-E2-3ym" id="eqd-rl-6e0"/>
                         <outlet property="paceLabel" destination="Fnx-II-0Jy" id="OLb-uB-Ynm"/>
                         <outlet property="promptLabel" destination="nfd-Dj-sUa" id="crO-NX-cI1"/>
                         <outlet property="startButton" destination="F73-qk-Ch6" id="hlL-0H-GxJ"/>
@@ -233,13 +254,6 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ndx-aP-pzi">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gold" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0bF-6T-ZrT">
-                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BadgeCell" rowHeight="80" id="bgD-G2-VkO" customClass="BadgeCell">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -565,6 +579,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="earth.jpg" width="599" height="599"/>
         <image name="info.png" width="60" height="59"/>
         <image name="spaceship-gold.png" width="100" height="137"/>
         <image name="spaceship-silver.png" width="100" height="137"/>

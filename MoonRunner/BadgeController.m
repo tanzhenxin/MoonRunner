@@ -97,4 +97,28 @@ float const goldMultiplier = 1.10f;
     return earnedArray;
 }
 
+- (Badge *)bestBadgeForDistance:(float)distance {
+    Badge *bestBadge = self.badges.firstObject;
+    for (Badge *badge in self.badges) {
+        if (distance < badge.distance) {
+            break;
+        }
+        bestBadge = badge;
+    }
+    
+    return bestBadge;
+}   
+
+- (Badge *)nextBadgeForDistance:(float)distance {
+    Badge *nextBadge;
+    for (Badge *badge in self.badges) {
+        nextBadge = badge;
+        if (distance < nextBadge.distance) {
+            break;
+        }
+    }
+    
+    return nextBadge;
+}
+
 @end

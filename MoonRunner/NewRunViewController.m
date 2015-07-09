@@ -8,11 +8,14 @@
 
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 #import "MathController.h"
 #import "Location.h"
 #import "NewRunViewController.h"
+#import "BadgeController.h"
 #import "Run.h"
 #import "Location.h"
+#import "Badge.h"
 
 static NSString * const detailSegueName = @"RunDetails";
 
@@ -26,12 +29,15 @@ static NSString * const detailSegueName = @"RunDetails";
 @property (weak, nonatomic) IBOutlet UILabel *paceLabel;
 @property (weak, nonatomic) IBOutlet UIButton *startButton;
 @property (weak, nonatomic) IBOutlet UIButton *stopButton;
+@property (weak, nonatomic) IBOutlet UIImageView *nextBadgeImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nextBadgeLabel;
 
 @property int seconds;
 @property float distance;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (strong, nonatomic) NSMutableArray *locations;
 @property (strong, nonatomic) NSTimer *timer;
+@property (strong, nonatomic) Badge *upcomingBadge;
 
 @end
 
@@ -46,6 +52,8 @@ static NSString * const detailSegueName = @"RunDetails";
     self.paceLabel.hidden = NO;
     self.mapView.hidden = NO;
     self.mapView.delegate = self;
+    self.nextBadgeLabel.hidden = NO;
+    self.nextBadgeImageView.hidden = NO;
     
     self.seconds = 0;
     self.distance = 0;
@@ -87,6 +95,30 @@ static NSString * const detailSegueName = @"RunDetails";
     self.timeLabel.text = [NSString stringWithFormat:@"Time: %@",  [MathController stringifySecondCount:self.seconds usingLongFormat:NO]];
     self.distanceLabel.text = [NSString stringWithFormat:@"Distance: %@", [MathController stringifyDistance:self.distance]];
     self.paceLabel.text = [NSString stringWithFormat:@"Pace: %@",  [MathController stringifyAvgPaceFromDict:self.distance overTime:self.seconds]];
+    
+    self.nextBadgeLabel.text = [NSString stringWithFormat:@"%@ until %@!", [MathController stringifyDistance:(self.upcomingBadge.distance - self.distance)], self.upcomingBadge.name];
+    [self checkNextBadge];
+}
+
+- (void)checkNextBadge {
+    Badge *nextBadge = [[BadgeController defaultController] nextBadgeForDistance:self.distance];
+    
+    if (self.upcomingBadge && ![nextBadge.name isEqualToString:self.upcomingBadge.name]) {
+        [self playSuccessSound];
+    }
+    
+    self.upcomingBadge = nextBadge;
+    self.nextBadgeImageView.image = [UIImage imageNamed:nextBadge.imageName];
+}
+
+- (void)playSuccessSound {
+    NSString *path = [NSString stringWithFormat:@"%@%@", [[NSBundle mainBundle] resourcePath], @"/success.wav"];
+    NSURL *filepath = [NSURL fileURLWithPath:path];
+    SystemSoundID soundID;
+    AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(filepath), &soundID);
+    AudioServicesPlaySystemSound(soundID);
+    
+    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 }
 
 - (void)startLocationUpdates {
@@ -148,6 +180,8 @@ static NSString * const detailSegueName = @"RunDetails";
     self.paceLabel.hidden = YES;
     self.stopButton.hidden = YES;
     self.mapView.hidden = YES;
+    self.nextBadgeImageView.hidden = YES;
+    self.nextBadgeLabel.hidden = YES;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
