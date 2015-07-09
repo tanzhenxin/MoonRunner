@@ -14,6 +14,7 @@
 #import "MultiColorPolylineSegment.h"
 #import "BadgeController.h"
 #import "Badge.h"
+#import "BadgeAnnotation.h"
 
 @interface DetailViewController () <MKMapViewDelegate>
 
@@ -130,6 +131,9 @@
         NSArray *colorSegments = [MathController colorSegmentForLocations:self.run.locations.array];
         [self.mapView addOverlays:colorSegments];
         
+        NSArray *annotations = [[BadgeController defaultController] mapAnnotationsForRun:self.run];
+        [self.mapView addAnnotations:annotations];
+        
     } else {
         
         // no locations were found!
@@ -155,6 +159,24 @@
     }
     
     return nil;
+}
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+    BadgeAnnotation *badgeAnnotation = (BadgeAnnotation *)annotation;
+    
+    MKAnnotationView *annotationView = [mapView dequeueReusableAnnotationViewWithIdentifier:@"checkpoint"];
+    if (!annotationView) {
+        annotationView = [[MKAnnotationView alloc] initWithAnnotation:badgeAnnotation reuseIdentifier:@"checkPoint"];
+        annotationView.image = [UIImage imageNamed:@"mapPin"];
+        annotationView.canShowCallout = true;
+    }
+    
+    UIImageView *badgeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 75, 50)];
+    badgeImageView.image = [UIImage imageNamed:badgeAnnotation.imageName];
+    badgeImageView.contentMode = UIViewContentModeScaleAspectFit;
+    annotationView.leftCalloutAccessoryView = badgeImageView;
+    
+    return annotationView;
 }
 
 - (void)viewDidLoad {

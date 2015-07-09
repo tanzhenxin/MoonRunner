@@ -6,10 +6,13 @@
 //  Copyright (c) 2015 檀振兴. All rights reserved.
 //
 
+#import <MapKit/MapKit.h>
 #import "BadgeController.h"
 #import "Badge.h"
 #import "BadgeEarnStatus.h"
 #import "Run.h"
+#import "Location.h"
+#import "BadgeAnnotation.h"
 
 float const silverMultiplier = 1.05f;
 float const goldMultiplier = 1.10f;
@@ -119,6 +122,42 @@ float const goldMultiplier = 1.10f;
     }
     
     return nextBadge;
+}
+
+- (NSArray *)mapAnnotationsForRun:(Run *)run {
+    NSMutableArray *annotations = [NSMutableArray array];
+    
+    double distance = 0;
+    int locationIndex = 1;
+    
+    for (Badge *badge in self.badges) {
+        if (run.distance.doubleValue < badge.distance) {
+            break;
+        }
+        
+        while (locationIndex < run.locations.count) {
+            Location *lastLoc = [run.locations objectAtIndex:(locationIndex - 1)];
+            Location *thisLoc = [run.locations objectAtIndex:locationIndex];
+            
+            CLLocation *lastLocCL = [[CLLocation alloc] initWithLatitude:lastLoc.latitude.doubleValue longitude:lastLoc.langitude.doubleValue];
+            CLLocation *thisLocCL = [[CLLocation alloc] initWithLatitude:thisLoc.latitude.doubleValue longitude:thisLoc.langitude.doubleValue];
+            
+            distance += [lastLocCL distanceFromLocation:thisLocCL];
+            locationIndex++;
+            
+            if (distance > badge.distance) {
+                BadgeAnnotation *annotation = [BadgeAnnotation new];
+                annotation.coordinate = thisLocCL.coordinate;
+                annotation.title = badge.name;
+                annotation.subtitle = badge.information;
+                annotation.imageName = badge.imageName;
+                [annotations addObject:annotation];
+                break;
+            }
+        }
+    }
+    
+    return annotations;
 }
 
 @end

@@ -71,6 +71,7 @@
 		FCD273D51B4D7E5100B213EB /* BadgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273D41B4D7E5100B213EB /* BadgeCell.m */; };
 		FCD273D81B4D800000B213EB /* BadgeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273D71B4D800000B213EB /* BadgeTableViewController.m */; };
 		FCD273E11B4E0DD300B213EB /* BadgeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273E01B4E0DD300B213EB /* BadgeDetailViewController.m */; };
+		FCD273E41B4E27D000B213EB /* BadgeAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273E31B4E27D000B213EB /* BadgeAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +167,8 @@
 		FCD273D71B4D800000B213EB /* BadgeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeTableViewController.m; sourceTree = "<group>"; };
 		FCD273DF1B4E0DD300B213EB /* BadgeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeDetailViewController.h; sourceTree = "<group>"; };
 		FCD273E01B4E0DD300B213EB /* BadgeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeDetailViewController.m; sourceTree = "<group>"; };
+		FCD273E21B4E27D000B213EB /* BadgeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeAnnotation.h; sourceTree = "<group>"; };
+		FCD273E31B4E27D000B213EB /* BadgeAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -316,6 +319,8 @@
 				FCD273C81B4D336400B213EB /* Badge.m */,
 				FCD273CD1B4D7AE700B213EB /* BadgeEarnStatus.h */,
 				FCD273CE1B4D7AE700B213EB /* BadgeEarnStatus.m */,
+				FCD273E21B4E27D000B213EB /* BadgeAnnotation.h */,
+				FCD273E31B4E27D000B213EB /* BadgeAnnotation.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -491,6 +496,7 @@
 				FC88D7F81B4B753A00AEF4CF /* MoonRunner.xcdatamodeld in Sources */,
 				FC88D80E1B4BC65F00AEF4CF /* MathController.m in Sources */,
 				FCD273D51B4D7E5100B213EB /* BadgeCell.m in Sources */,
+				FCD273E41B4E27D000B213EB /* BadgeAnnotation.m in Sources */,
 				FC88D7FB1B4B757900AEF4CF /* Run.m in Sources */,
 				FC88D80B1B4B895800AEF4CF /* DetailViewController.m in Sources */,
 				FCD273CF1B4D7AE700B213EB /* BadgeEarnStatus.m in Sources */,
