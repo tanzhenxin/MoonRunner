@@ -12,6 +12,7 @@
 #import "Run.h"
 #import "BadgeEarnStatus.h"
 #import "MathController.h"
+#import "BadgeDetailViewController.h"
 
 @interface BadgeTableViewController ()
 
@@ -36,6 +37,14 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue destinationViewController] isKindOfClass:[BadgeDetailViewController class]]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        BadgeEarnStatus *earnStatus = [self.earnedStatusArray objectAtIndex:indexPath.row];
+        ((BadgeDetailViewController *)[segue destinationViewController]).earnStatus = earnStatus;
+    }
 }
 
 #pragma mark - Table view data source

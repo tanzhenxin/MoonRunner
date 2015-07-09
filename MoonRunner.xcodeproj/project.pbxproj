@@ -70,6 +70,7 @@
 		FCD273CF1B4D7AE700B213EB /* BadgeEarnStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273CE1B4D7AE700B213EB /* BadgeEarnStatus.m */; };
 		FCD273D51B4D7E5100B213EB /* BadgeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273D41B4D7E5100B213EB /* BadgeCell.m */; };
 		FCD273D81B4D800000B213EB /* BadgeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273D71B4D800000B213EB /* BadgeTableViewController.m */; };
+		FCD273E11B4E0DD300B213EB /* BadgeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD273E01B4E0DD300B213EB /* BadgeDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +164,8 @@
 		FCD273D41B4D7E5100B213EB /* BadgeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeCell.m; sourceTree = "<group>"; };
 		FCD273D61B4D800000B213EB /* BadgeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeTableViewController.h; sourceTree = "<group>"; };
 		FCD273D71B4D800000B213EB /* BadgeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeTableViewController.m; sourceTree = "<group>"; };
+		FCD273DF1B4E0DD300B213EB /* BadgeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadgeDetailViewController.h; sourceTree = "<group>"; };
+		FCD273E01B4E0DD300B213EB /* BadgeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadgeDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +333,8 @@
 				FCD273D41B4D7E5100B213EB /* BadgeCell.m */,
 				FCD273D61B4D800000B213EB /* BadgeTableViewController.h */,
 				FCD273D71B4D800000B213EB /* BadgeTableViewController.m */,
+				FCD273DF1B4E0DD300B213EB /* BadgeDetailViewController.h */,
+				FCD273E01B4E0DD300B213EB /* BadgeDetailViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -493,6 +498,7 @@
 				FC4AEF501B4CB5AD00319B7A /* MultiColorPolylineSegment.m in Sources */,
 				FCD273CC1B4D33C300B213EB /* BadgeController.m in Sources */,
 				FCD273D81B4D800000B213EB /* BadgeTableViewController.m in Sources */,
+				FCD273E11B4E0DD300B213EB /* BadgeDetailViewController.m in Sources */,
 				FC88D8081B4B893100AEF4CF /* NewRunViewController.m in Sources */,
 				FC88D7CE1B4B739F00AEF4CF /* AppDelegate.m in Sources */,
 				FC88D7CB1B4B739F00AEF4CF /* main.m in Sources */,

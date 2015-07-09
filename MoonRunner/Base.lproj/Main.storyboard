@@ -233,6 +233,13 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ndx-aP-pzi">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gold" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0bF-6T-ZrT">
+                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BadgeCell" rowHeight="80" id="bgD-G2-VkO" customClass="BadgeCell">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -316,10 +323,10 @@
             </objects>
             <point key="canvasLocation" x="921" y="799"/>
         </scene>
-        <!--View Controller-->
+        <!--Badge Detail View Controller-->
         <scene sceneID="mlw-Zh-flq">
             <objects>
-                <viewController id="qpN-Et-Z0r" sceneMemberID="viewController">
+                <viewController id="qpN-Et-Z0r" customClass="BadgeDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2ky-gb-X54"/>
                         <viewControllerLayoutGuide type="bottom" id="GBJ-Du-ETl"/>
@@ -331,12 +338,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="64" width="400" height="276"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.png" translatesAutoresizingMaskIntoConstraints="NO" id="6sJ-UM-3JD">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="317" y="254" width="67" height="67"/>
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eV9-kH-mXx">
@@ -375,7 +376,7 @@
                                     <rect key="frame" x="16" y="516" width="356" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gold" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBi-FL-i44">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gold" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szu-we-ywd">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -384,18 +385,6 @@
                                     <rect key="frame" x="16" y="559" width="356" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spaceship-silver.png" translatesAutoresizingMaskIntoConstraints="NO" id="2c8-um-aYs">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="350" y="515" width="22" height="22"/>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spaceship-gold.png" translatesAutoresizingMaskIntoConstraints="NO" id="gMJ-fA-QK4">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="350" y="552" width="22" height="22"/>
-                                </variation>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHU-XZ-Hal">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -405,37 +394,83 @@
                                     <rect key="frame" x="16" y="392" width="356" height="21"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spaceship-silver.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nk4-Ir-VJ5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="350" y="515" width="22" height="22"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spaceship-gold.png" translatesAutoresizingMaskIntoConstraints="NO" id="gMJ-fA-QK4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="350" y="558" width="22" height="22"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVd-6a-K5y">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button" image="info.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="115" height="59"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LS-hc-Dzf">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="info.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="319" y="260" width="65" height="60"/>
+                                </variation>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="qpN-Et-Z0r" eventType="touchUpInside" id="53K-RV-AEw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="8hN-T9-Gcp"/>
-                                <exclude reference="6sJ-UM-3JD"/>
                                 <exclude reference="eV9-kH-mXx"/>
                                 <exclude reference="1KH-ns-hem"/>
                                 <exclude reference="nGA-bt-fsg"/>
                                 <exclude reference="cEb-So-UCe"/>
-                                <exclude reference="LBi-FL-i44"/>
-                                <exclude reference="2c8-um-aYs"/>
-                                <exclude reference="gMJ-fA-QK4"/>
+                                <exclude reference="Szu-we-ywd"/>
                                 <exclude reference="XHU-XZ-Hal"/>
+                                <exclude reference="Nk4-Ir-VJ5"/>
+                                <exclude reference="gMJ-fA-QK4"/>
+                                <exclude reference="bVd-6a-K5y"/>
+                                <exclude reference="1LS-hc-Dzf"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="8hN-T9-Gcp"/>
-                                <include reference="6sJ-UM-3JD"/>
                                 <include reference="eV9-kH-mXx"/>
                                 <include reference="1KH-ns-hem"/>
                                 <include reference="nGA-bt-fsg"/>
                                 <include reference="cEb-So-UCe"/>
-                                <include reference="LBi-FL-i44"/>
-                                <include reference="2c8-um-aYs"/>
-                                <include reference="gMJ-fA-QK4"/>
+                                <include reference="Szu-we-ywd"/>
                                 <include reference="XHU-XZ-Hal"/>
+                                <include reference="Nk4-Ir-VJ5"/>
+                                <include reference="gMJ-fA-QK4"/>
+                                <include reference="bVd-6a-K5y"/>
+                                <include reference="1LS-hc-Dzf"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="badgeImageView" destination="8hN-T9-Gcp" id="vQW-Uh-Znj"/>
+                        <outlet property="bestLabel" destination="nGA-bt-fsg" id="Ukk-45-1x2"/>
+                        <outlet property="distanceLabel" destination="XHU-XZ-Hal" id="Ytp-dj-nTL"/>
+                        <outlet property="earnedLabel" destination="1KH-ns-hem" id="kyA-zG-zFc"/>
+                        <outlet property="goldBadgeView" destination="gMJ-fA-QK4" id="UyK-0E-bZ7"/>
+                        <outlet property="goldLabel" destination="Szu-we-ywd" id="M3U-2Q-K9O"/>
+                        <outlet property="nameLabel" destination="eV9-kH-mXx" id="ADn-ve-ddd"/>
+                        <outlet property="silverBadgeView" destination="Nk4-Ir-VJ5" id="aPb-9O-CcJ"/>
+                        <outlet property="silverLabel" destination="cEb-So-UCe" id="XHv-i9-yij"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="47Z-Bh-4Jp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
